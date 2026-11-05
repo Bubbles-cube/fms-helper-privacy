@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FMS 助手 隱私權政策</title>
+<style>
+body{max-width:760px;margin:40px auto;padding:0 16px;font:16px/1.7 system-ui,-apple-system,"Segoe UI","Microsoft JhengHei",sans-serif;color:#1a1a1a}
+h1{font-size:24px}h2{font-size:18px;margin-top:28px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #ddd;padding:8px;text-align:left;font-size:14px}
+code{background:#f2f2f2;padding:1px 4px;border-radius:4px}
+</style>
+</head>
+<body>
+<h1>FMS 助手 隱私權政策</h1>
+<p>生效日期：2026-11-05　作者：Bubbles</p>
+<h2>一句話</h2>
+<p>FMS 助手不收集、不上傳、不販售任何個人資料；所有處理都在你的瀏覽器內完成。</p>
+<h2>我們處理什麼</h2>
+<p>當你在 FMS（https://www.chitcfms.com/）使用本擴充時，擴充會在你自己的瀏覽器中讀取頁面上已有的資訊（車輛代號、車牌、錄影清單、你點選的影像），用來：</p>
+<ol>
+<li>產生縮圖牆（找事件）</li>
+<li>用 ArtPlayer 播放你選擇的那一段回放</li>
+<li>記住三個開關（即時回放介入／找事件視窗／縮圖牆）</li>
+</ol>
+<h2>資料會不會離開你的裝置</h2>
+<p>不會。沒有分析、追蹤、廣告或第三方 SDK；不把影像、車牌、車輛代號或頁面內容傳到作者或第三方伺服器。唯一的網路請求，是你原本在 FMS 上操作時就會發生的站方請求，直接送到 FMS 站方，不經過我們。</p>
+<h2>本機儲存</h2>
+<table>
+<tr><th>位置</th><th>內容</th><th>用途</th></tr>
+<tr><td><code>chrome.storage.local</code></td><td>三個開關（0/1）</td><td>記住設定</td></tr>
+<tr><td>IndexedDB <code>fms-tl-cache</code></td><td>你抓過的縮圖</td><td>避免重複開流、加快找事件</td></tr>
+<tr><td>頁面 localStorage</td><td>面板位置、開關備份</td><td>記住 UI 位置</td></tr>
+</table>
+<p>移除擴充或清除該網站資料，就會一併刪除。</p>
+<h2>權限</h2>
+<ul>
+<li><code>storage</code>：只存上述三個開關。</li>
+<li>網站權限 <code>https://www.chitcfms.com/*</code>：只在 FMS 頁面運作，不在其他網站注入或讀取內容。</li>
+</ul>
+<h2>遠端程式碼</h2>
+<p>沒有。所有 JavaScript 都在擴充包內（ArtPlayer 5.4.0、mpegts.js 1.7.3 已內嵌）。</p>
+<h2>兒童</h2>
+<p>本擴充為企業內部作業工具，不針對兒童，也不收集年齡資料。</p>
+<h2>變更與聯絡</h2>
+<p>政策變更會更新本頁與擴充版本說明。聯絡：Bubbles（請補上公司聯絡 Email）。</p>
+</body>
+</html>
